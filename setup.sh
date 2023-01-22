@@ -11,7 +11,7 @@ docker run -idt \
     --env="XAUTHORITY=$XAUTH"\
     --net=host \
     --privileged \
-    hello \
+    ros2_foxy \
     bash
 
 echo "Done"

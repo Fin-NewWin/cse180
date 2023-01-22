@@ -7,9 +7,11 @@ regularly for the 2023 spring semester.
 
 # Installation
 
-Install docker and build the docker image
+Install docker and build the docker image.
+Running the script should build the image for you
 ```bash
-docker build -t <name-of-image> .
+chmod u+x setup.sh
+./setup.sh
 docker image ls
 ```
 Check if image is built
