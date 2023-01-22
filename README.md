@@ -17,7 +17,7 @@ Check if image is built
 Use the shell script to setup the docker container with name `gui1`
 
 ```bash
-chmod +x setup.bash`
+chmod +x setup.bash
 ```
 
 Enter docker container
