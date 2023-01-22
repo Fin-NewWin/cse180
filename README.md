@@ -1,6 +1,6 @@
 # Introduction
 
-CSE-180 Robotics \n
+CSE-180 Robotics <br />
 I don't use ubuntu but another distribution which has dependency issues with building ros2 from source therefore created
 this docker image to fix that. Should work for other Linux distro. If there are issues, make a new issue.
 
