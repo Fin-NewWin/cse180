@@ -2,7 +2,8 @@
 
 CSE-180 Robotics <br />
 I don't use ubuntu but another distribution which has dependency issues with building ros2 from source therefore created
-this docker image to fix that. Should work for other Linux distro. If there are issues, make a new issue.
+this docker image to fix that. Should work for other Linux distro. File an issue if there are bugs. I will be updating the class
+regularly for the 2023 spring semester.
 
 # Installation
 
