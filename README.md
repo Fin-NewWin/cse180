@@ -10,21 +10,16 @@ regularly for the 2023 spring semester.
 Install docker and build the docker image.
 Running the script should build the image for you
 ```bash
-chmod u+x setup.sh
+chmod +x setup.sh
 ./setup.sh
 docker image ls
 ```
 Check if image is built
 
-Use the shell script to setup the docker container with name `gui1`
-
-```bash
-chmod +x setup.bash
-```
 
 Enter docker container
 ```bash
-docker exec -it gui1
+docker exec -it ros2 bash
 ```
 
 # Testing
