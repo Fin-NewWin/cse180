@@ -1,7 +1,11 @@
 FROM ubuntu:20.04
 
+ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND teletype
+
+
 RUN apt update
-RUN apt-get install curl -y
+RUN apt-get install curl apt-utils -y
 RUN apt-get install software-properties-common -y
 # RUN apt-add-repository universe
 # RUN apt-get install software-properties-common && add-apt-repository universe
@@ -27,6 +31,7 @@ RUN apt install python3-colcon-common-extensions -y
 
 
 # Optional ROS2 packages
-RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-RUN apt update
-RUN ACCEPT_EULA=Y apt install ros-foxy-* -y
+
+# RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+# RUN apt update
+# RUN echo "q\ryes\r" | apt install ros-foxy-* -y
