@@ -35,3 +35,18 @@ RUN apt install python3-colcon-common-extensions -y
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 RUN apt update
 RUN RTI_NC_LICENSE_ACCEPTED=yes apt install ros-foxy-* -y
+
+# Text Editor
+RUN apt install neovim -y
+RUN echo '\nsource /opt/ros/foxy/setup.bash' >> /etc/bash.bashrc
+
+
+# Clone https://github.com/stefanocarpin/MRTP
+# Example for some
+WORKDIR /root
+RUN git clone https://github.com/stefanocarpin/MRTP
+
+WORKDIR /root/CSE180
+
+# WORKDIR /root/MRTP
+# RUN colcon build
