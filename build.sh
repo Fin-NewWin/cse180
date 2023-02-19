@@ -1,9 +1,6 @@
 #!/bin/bash
 
 
-xhost local:root
-XAUTH=/tmp/.docker.XAUTH
-
 sudo docker rm -f ros2
 sudo docker build -t ros2_foxy . --build-arg 'ACCEPT_EULA=Y'
 echo "======================================"

@@ -46,7 +46,8 @@ RUN echo '\nsource /opt/ros/foxy/setup.bash' >> /etc/bash.bashrc
 WORKDIR /root
 RUN git clone https://github.com/stefanocarpin/MRTP
 
-WORKDIR /root/CSE180
+RUN mkdir -p /root/CSE180/src
+WORKDIR /root/CSE180/src
 
 # WORKDIR /root/MRTP
 # RUN colcon build
