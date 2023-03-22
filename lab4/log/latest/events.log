@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000140] (lab4) JobQueued: {'identifier': 'lab4', 'dependencies': OrderedDict()}
+[0.000345] (lab4) JobStarted: {'identifier': 'lab4'}
+[0.020835] (lab4) JobProgress: {'identifier': 'lab4', 'progress': 'cmake'}
+[0.021443] (lab4) Command: {'cmd': ['/usr/bin/cmake', '/root/CSE180/src/lab4', '-DCMAKE_INSTALL_PREFIX=/root/CSE180/src/lab4/install/lab4'], 'cwd': '/root/CSE180/src/lab4/build/lab4', 'env': OrderedDict([('MALIPUT_MALIDRIVE_RESOURCE_ROOT', '/opt/ros/foxy/share/maliput_malidrive'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('MULTILANE_RESOURCE_ROOT', '/opt/ros/foxy/share/maliput_multilane'), ('HOSTNAME', 'thinkshit'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/opt/libphidget22/lib:/usr/share/gurumdds/cmake/../../../lib:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/CSE180'), ('ROS_PYTHON_VERSION', '3'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-5.3.1'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/CSE180/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin/maliput_malidrive/applications:/opt/ros/foxy/bin/maliput_malidrive:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/rti.com/rti_connext_dds-5.3.1/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', ''), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/CSE180/install/lab4:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'teletype'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ASAN_OPTIONS', ':detect_odr_violation=0::detect_odr_violation=0:detect_odr_violation=0::detect_odr_violation=0::detect_odr_violation=0:detect_odr_violation=0:detect_odr_violation=0'), ('PWD', '/root/CSE180/src/lab4/build/lab4'), ('MALIPUT_PLUGIN_PATH', '/opt/ros/foxy/lib/maliput_plugins'), ('PYTHONPATH', '/opt/ros/foxy/lib/python/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/CSE180/install/lab4:/opt/ros/foxy')]), 'shell': False}
+[0.099428] (-) TimerEvent: {}
+[0.103062] (lab4) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.174496] (lab4) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.179984] (lab4) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199462] (-) TimerEvent: {}
+[0.276954] (lab4) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.277945] (lab4) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299553] (-) TimerEvent: {}
+[0.379851] (lab4) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.395610] (lab4) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.396018] (lab4) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.399266] (lab4) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.399614] (-) TimerEvent: {}
+[0.499852] (-) TimerEvent: {}
+[0.508839] (lab4) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.510150] (lab4) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599958] (-) TimerEvent: {}
+[0.621889] (lab4) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.635939] (lab4) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.636504] (lab4) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.645582] (lab4) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.685763] (lab4) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.685966] (lab4) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700045] (-) TimerEvent: {}
+[0.800323] (-) TimerEvent: {}
+[0.900599] (-) TimerEvent: {}
+[1.000902] (-) TimerEvent: {}
+[1.048317] (lab4) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.101027] (-) TimerEvent: {}
+[1.162020] (lab4) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.185561] (lab4) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.200997] (lab4) StdoutLine: {'line': b'-- Found RTI Connext: /opt/rti.com/rti_connext_dds-5.3.1\n'}
+[1.201146] (-) TimerEvent: {}
+[1.301406] (-) TimerEvent: {}
+[1.401681] (-) TimerEvent: {}
+[1.501948] (-) TimerEvent: {}
+[1.602235] (-) TimerEvent: {}
+[1.702528] (-) TimerEvent: {}
+[1.802756] (-) TimerEvent: {}
+[1.903030] (-) TimerEvent: {}
+[2.003359] (-) TimerEvent: {}
+[2.103759] (-) TimerEvent: {}
+[2.204188] (-) TimerEvent: {}
+[2.304693] (-) TimerEvent: {}
+[2.405011] (-) TimerEvent: {}
+[2.505315] (-) TimerEvent: {}
+[2.605749] (-) TimerEvent: {}
+[2.682727] (lab4) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.705902] (-) TimerEvent: {}
+[2.743513] (lab4) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.805986] (-) TimerEvent: {}
+[2.892029] (lab4) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.906109] (-) TimerEvent: {}
+[3.002630] (lab4) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.005532] (lab4) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.006176] (-) TimerEvent: {}
+[3.007154] (lab4) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.106311] (-) TimerEvent: {}
+[3.108962] (lab4) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.109366] (lab4) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.206454] (-) TimerEvent: {}
+[3.212255] (lab4) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.212598] (lab4) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.303944] (lab4) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.304223] (lab4) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.306588] (-) TimerEvent: {}
+[3.406938] (-) TimerEvent: {}
+[3.414974] (lab4) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.416496] (lab4) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.507022] (-) TimerEvent: {}
+[3.607413] (-) TimerEvent: {}
+[3.684768] (lab4) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[3.707505] (-) TimerEvent: {}
+[3.738653] (lab4) StdoutLine: {'line': b'-- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)\n'}
+[3.807611] (-) TimerEvent: {}
+[3.907956] (-) TimerEvent: {}
+[3.931478] (lab4) StdoutLine: {'line': b'-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[3.961325] (lab4) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[4.008086] (-) TimerEvent: {}
+[4.077045] (lab4) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.108192] (-) TimerEvent: {}
+[4.208450] (-) TimerEvent: {}
+[4.241141] (lab4) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.251424] (lab4) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.251669] (lab4) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.251835] (lab4) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.261612] (lab4) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.261839] (lab4) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.267535] (lab4) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.279849] (lab4) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.280186] (lab4) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.282065] (lab4) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.287892] (lab4) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.301548] (lab4) StdoutLine: {'line': b'-- Generating done\n'}
+[4.303537] (lab4) StdoutLine: {'line': b'-- Build files have been written to: /root/CSE180/src/lab4/build/lab4\n'}
+[4.308571] (-) TimerEvent: {}
+[4.313235] (lab4) CommandEnded: {'returncode': 0}
+[4.314158] (lab4) JobProgress: {'identifier': 'lab4', 'progress': 'build'}
+[4.315348] (lab4) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/CSE180/src/lab4/build/lab4', '--', '-j8', '-l8'], 'cwd': '/root/CSE180/src/lab4/build/lab4', 'env': OrderedDict([('MALIPUT_MALIDRIVE_RESOURCE_ROOT', '/opt/ros/foxy/share/maliput_malidrive'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GURUMDDS_HOME', '/usr/share/gurumdds/cmake/../../..'), ('MULTILANE_RESOURCE_ROOT', '/opt/ros/foxy/share/maliput_multilane'), ('HOSTNAME', 'thinkshit'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/opt/libphidget22/lib:/usr/share/gurumdds/cmake/../../../lib:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/root/CSE180'), ('ROS_PYTHON_VERSION', '3'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-5.3.1'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/CSE180/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/foxy/bin/maliput_malidrive/applications:/opt/ros/foxy/bin/maliput_malidrive:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/rti.com/rti_connext_dds-5.3.1/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', ''), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/CSE180/install/lab4:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'teletype'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ASAN_OPTIONS', ':detect_odr_violation=0::detect_odr_violation=0:detect_odr_violation=0::detect_odr_violation=0::detect_odr_violation=0:detect_odr_violation=0:detect_odr_violation=0'), ('PWD', '/root/CSE180/src/lab4/build/lab4'), ('MALIPUT_PLUGIN_PATH', '/opt/ros/foxy/lib/maliput_plugins'), ('PYTHONPATH', '/opt/ros/foxy/lib/python/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/CSE180/install/lab4:/opt/ros/foxy')]), 'shell': False}
+[4.384630] (lab4) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target drawsquarefb\x1b[0m\n'}
+[4.408681] (-) TimerEvent: {}
+[4.452778] (lab4) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/drawsquarefb.dir/src/drawsquarefb.cpp.o\x1b[0m\n'}
+[4.508831] (-) TimerEvent: {}
+[4.609107] (-) TimerEvent: {}
+[4.709389] (-) TimerEvent: {}
+[4.809656] (-) TimerEvent: {}
+[4.909938] (-) TimerEvent: {}
+[5.010204] (-) TimerEvent: {}
+[5.110501] (-) TimerEvent: {}
+[5.210776] (-) TimerEvent: {}
+[5.311076] (-) TimerEvent: {}
+[5.411376] (-) TimerEvent: {}
+[5.511695] (-) TimerEvent: {}
+[5.611988] (-) TimerEvent: {}
+[5.712279] (-) TimerEvent: {}
+[5.812694] (-) TimerEvent: {}
+[5.913010] (-) TimerEvent: {}
+[6.013285] (-) TimerEvent: {}
+[6.113605] (-) TimerEvent: {}
+[6.214035] (-) TimerEvent: {}
+[6.289972] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.290465] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kcoords\x1b[m\x1b[K\xe2\x80\x99 as multidimensional array must have bounds for all dimensions except the first\n'}
+[6.290640] (lab4) StderrLine: {'line': b'   49 |  double \x1b[01;31m\x1b[Kcoords\x1b[m\x1b[K[][] = {[1, 0], [1, -1]};\n'}
+[6.290806] (lab4) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.291012] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[6.291176] (lab4) StderrLine: {'line': b'   49 |  double coords[][] = {[\x1b[01;31m\x1b[K1\x1b[m\x1b[K, 0], [1, -1]};\n'}
+[6.291342] (lab4) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.291508] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K]\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.291684] (lab4) StderrLine: {'line': b'   49 |  double coords[][] = {[1\x1b[01;31m\x1b[K,\x1b[m\x1b[K 0], [1, -1]};\n'}
+[6.291846] (lab4) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.292010] (lab4) StderrLine: {'line': b'      |                         \x1b[32m\x1b[K]\x1b[m\x1b[K\n'}
+[6.292173] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[6.292425] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.292613] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.292852] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K]\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.292961] (lab4) StderrLine: {'line': b'   49 |  double coords[][] = \x1b[32m\x1b[K{\x1b[m\x1b[K[1, 0\x1b[01;31m\x1b[K]\x1b[m\x1b[K, [1, -1]};\n'}
+[6.293089] (lab4) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K~\x1b[m\x1b[K     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.293259] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:46:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KDIRS\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[6.293398] (lab4) StderrLine: {'line': b'   46 |  double \x1b[01;35m\x1b[KDIRS\x1b[m\x1b[K[] = {0,M_PI/2,M_PI,M_PI/2};\n'}
+[6.293513] (lab4) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.293597] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:48:6:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KyawAt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[6.293681] (lab4) StderrLine: {'line': b'   48 |  int \x1b[01;35m\x1b[KyawAt\x1b[m\x1b[K = 1;\n'}
+[6.293762] (lab4) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.293842] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.293921] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[6.294012] (lab4) StderrLine: {'line': b'   49 |  double coords[][] = {[1, 0], [1, -1]}\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[6.294096] (lab4) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.294175] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:52:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.294259] (lab4) StderrLine: {'line': b'   52 |  \x1b[01;31m\x1b[Kwhile\x1b[m\x1b[K (rclcpp::ok()) {\n'}
+[6.294338] (lab4) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.294418] (lab4) StderrLine: {'line': b'\x1b[01m\x1b[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:75:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.294500] (lab4) StderrLine: {'line': b'   75 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[6.294602] (lab4) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.314130] (-) TimerEvent: {}
+[6.414435] (-) TimerEvent: {}
+[6.514778] (-) TimerEvent: {}
+[6.615157] (-) TimerEvent: {}
+[6.715743] (-) TimerEvent: {}
+[6.816176] (-) TimerEvent: {}
+[6.916546] (-) TimerEvent: {}
+[7.016902] (-) TimerEvent: {}
+[7.117351] (-) TimerEvent: {}
+[7.217682] (-) TimerEvent: {}
+[7.318032] (-) TimerEvent: {}
+[7.418418] (-) TimerEvent: {}
+[7.518736] (-) TimerEvent: {}
+[7.619061] (-) TimerEvent: {}
+[7.719360] (-) TimerEvent: {}
+[7.819613] (-) TimerEvent: {}
+[7.919910] (-) TimerEvent: {}
+[8.020194] (-) TimerEvent: {}
+[8.120501] (-) TimerEvent: {}
+[8.220790] (-) TimerEvent: {}
+[8.321087] (-) TimerEvent: {}
+[8.347500] (lab4) StderrLine: {'line': b'make[2]: *** [CMakeFiles/drawsquarefb.dir/build.make:63: CMakeFiles/drawsquarefb.dir/src/drawsquarefb.cpp.o] Error 1\n'}
+[8.347737] (lab4) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/drawsquarefb.dir/all] Error 2\n'}
+[8.347959] (lab4) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.350601] (lab4) CommandEnded: {'returncode': 2}
+[8.406431] (lab4) JobEnded: {'identifier': 'lab4', 'rc': 2}
+[8.417142] (-) EventReactorShutdown: {}

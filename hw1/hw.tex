@@ -1,0 +1,293 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\pagestyle{fancy}
+\rhead{Homework 1}
+\lhead{\textbf{Phien Nguyen}}
+
+\begin{document}
+\section{Composite Rotations}
+Two frames A and B are initially coincident. Frame B then undergoes the following sequence of
+transformations:
+\\
+\\
+$$
+    ^{A}_{B}R = [R_{x}(\frac{\pi}{3})[[R_{x}(\frac{\pi}{2})R_{y}(\frac{\pi}{4})]R_{z}(\frac{\pi}{6})]]R_{y}(\frac{\pi}{3})
+$$
+\section{Transformations Matrices}
+Two frames A and B are initially coincident. Frame B then undergoes the following transformations:
+\\
+Write the transformation matrices $_{B}^{A}T$ and $_{A}^{B}T$
+\\
+\\
+$$
+    _{B}^{A}T = T(z, \frac{\pi}{2}) * T(0, 3, 0) * T(x, \frac{\pi}{2})
+    \\
+$$
+$$
+    \begin{aligned}
+        _{B}^{A}T & =
+        \begin{bmatrix}
+            0 & -1 & 0 & 0
+            \\
+            1 & 0 & 0 & 0
+            \\
+            0 & 0 & 1 & 0
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & 3
+            \\
+            0 & 0 & 1 & 0
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 & 0 & 0
+            \\
+            1 & 0 & -1 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+        \\
+        \\
+        _{B}^{A}T & =
+        \begin{bmatrix}
+            0 & 0 & 1 & -3
+            \\
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+        \\
+        \\
+        \\
+        \text{To get} _{A}^{B}T
+        \\
+        \\
+        _{A}^{B}T & =
+        \begin{bmatrix}
+            0 & 1 & 0 & -(0 + 0 + 0)
+            \\
+            0 & 0 & 1 & -(0 + 0 + 0)
+            \\
+            1 & 0 & 0 & -(-3 + 0 + 0)
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+        \\
+        \\
+        _{A}^{B}T & =
+        \begin{bmatrix}
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 1 & 0
+            \\
+            1 & 0 & 0 & 3
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+    \end{aligned}
+$$
+
+\section{Quaternions to Rotations}
+Let $q = a + bi + cj + dk$ be a unit quaternion. In the lecture notes it is stated that its associated
+rotation matrix is
+$$
+R =
+\begin{bmatrix}
+    2(a^{2} + b^{2}) - 1 & 2(bc - ad) & 2(bd + ac)
+    \\
+    2(bc + ad) & 2(a^{2} + c^{2}) - 1 & 2(cd - ab)
+    \\
+    2(bd - ac) & 2(cd + ab) & 2(a^{2} + d^{2}) -1
+\end{bmatrix}
+$$
+\textit{Claim.} Show that \textbf{R} is a rotation matrix.
+\\
+\\
+\textit{Proof.}\\
+\textbf{(a) each of its column has length 1;}
+\\
+\\
+This is the first column
+$$
+    q_{1} = \sqrt{(2(a^{2} + b^{2}) - 1)^{2} + (2(bc + ad))^{2} + (2(bd-ac))^{2}}
+$$
+using symbolab, I got the result
+$$
+    \begin{aligned}
+        \mid q_{1} \mid & = \sqrt{4a^{4} + 8a^{2}b^{2} + 4a^{2}c^{2} + 4a^{2}d^{2} - 4a^{2} + 4b^{4}-4b^{2} + 4b^{2}c^{2} + 4b^{2}d^{2} + 1}, simplify
+        \\
+        & = \sqrt{4a^{2}(a^{2} + 2b^{2} + d^{2} - 1) + 4b^{2}(b^{2} - 1 + c^{2} + d^{2}) + 1}
+        \\
+        & = \sqrt{4a^{2}(-b^{2}) + 4b^{2}(a^{2}) + 1}
+        \\
+        & = \sqrt{1} = 1
+    \end{aligned}
+$$
+check the other columns
+$$
+    \begin{aligned}
+        \mid q_2 \mid & = \sqrt{(2(bc - ad))^{2} + (2(a^{2} + c^{2}) - 1)^{2} + (2(cd + ab))^{2}}
+        \\
+        & = \sqrt{4c^{4} + 4b^{2}c^{2} + 8c^{2}a^{2} + 4c^{2}d^{2} - 4c^{2} + 4a^{4} - 4a^{2} + 4b^{2}a^{2} + 4a^{2}d^{2} + 1}, simplify
+        \\
+        & = \sqrt{4c^{2}(c^{2} + b^{2} + 2a^{2} + d^{2} - 1) +4a^{2}(a^{2} - 1 + b^{2} + d^{2}) + 1}
+        \\
+        & = \sqrt{4c^{2}(-a^{2}) + 4a^{2}(c^{2}) + 1}
+        \\
+        & = \sqrt{1} = 1
+    \end{aligned}
+$$
+$$
+    \begin{aligned}
+        \mid q_3 \mid & = \sqrt{(2(bd + ac))^{2} + (2(cd - ab))^{2} + (2(a^{2} + d^{2}) - 1)^{2}}
+        \\
+        & = \sqrt{4d^{4} + 4b^{2}d^{2} + 8d^{2}a^{2} + 4d^{2}c^{2} - 4d^{2} + 4a^{4} - 4a^{2} + 4b^{2}a^{2} + 4a^{2}c^{2} + 1}, simplify
+        \\
+        & = \sqrt{4d^{2}(d^{2} + b^{2} + 2a^{2} + c^{2} - 1) +4a^{2}(a^{2} - 1 + b^{2} + c^{2}) + 1}
+        \\
+        & = \sqrt{4d^{2}(-a^{2}) + 4a^{2}(d^{2}) + 1}
+        \\
+        & = \sqrt{1} = 1
+    \end{aligned}
+$$
+\\
+\textbf{(b) its columns are mutually orthogonal;}
+\\
+\\
+where $q_{0}*q_{n} = 0$ means that the column are orthogonal where \textbf{q} = the column
+$$
+    \begin{aligned}
+        q_{1}*q_{2} & = (2(a^{2} + b^{2}) - 1)(2(bc - ad)) + (2(bc + ad))(2(a^{2} + c^{2}) - 1) + (2(bd - ac))(2(cd + ab))\\
+        & = 4b^{3}c - 4bc + 4bc^{3} + 4a^{2}bc + 4bcd^{2}
+        \\
+        & = 4b(b^{2}c - c + c^{3} + a^{2}c + cd^{2})
+        \\
+        & = 4bc(b^{2} - 1 + c^{2} + a^{2} + d^{2}) = 4bc(1 - 1)
+        \\
+        & = 4bc(0) = 0
+        \\
+        \\
+        q_{1}*q_{3} & = (2(a^{2} + b^{2}) - 1)(2(bd + ac)) + (2(bc + ad))(2(cd - ab)) + (2(bd - ac))(2(a^{2} + d^{2}) - 1)
+        \\
+        & = 4b^{3}d - 4bd + 4bd^{3} + 4a^{2}bd + 4bdc^{2}
+        \\
+        & = 4b(b^{2}d - d + d^{3} + a^{2}d + dc^{2})
+        \\
+        & = 4bd(b^{2} - 1 + d^{2} + a^{2} + c^{2}) = 4bd(1 - 1)
+        \\
+        & = 4bd(0) = 0
+        \\
+        \\
+        q_{2}*q_{3} & = (2(bc - ad))(2(bd + ac)) + (2(a^{2} + c^{2}) - 1)(2(cd - ab)) + (2(cd + ab))(2(a^{2} + d^{2}) - 1)
+        \\
+        & = 4b^{3}a - 4ba + 4ba^{3} + 4d^{2}ba + 4bac^{2}
+        \\
+        & = 4b(b^{2}a - a + a^{3} + d^{2}a + ac^{2})
+        \\
+        & = 4ba(b^{2} - 1 + a^{2} + d^{2} + c^{2}) = 4ba(1 - 1)
+        \\
+        & = 4ba(0) = 0
+    \end{aligned}
+$$
+\\
+\textbf{(c) its determinant is 1.}
+\\\\
+
+$$
+    \begin{aligned}
+        det(R) & =
+        [2(a^{2} + b^{2}) - 1] \cdot det
+        \begin{bmatrix}
+            2(a^{2} + c^{2}) - 1 & 2(cd - ab)
+            \\
+            2(cd + ab) & 2(a^{2} + d^{2}) -1
+        \end{bmatrix}
+        \\
+        & - [2(bc - ad)] \cdot det
+        \begin{bmatrix}
+            2(bc + ad) & 2(cd - ab)
+            \\
+            2(bd - ac) & 2(a^{2} + d^{2}) -1
+        \end{bmatrix}
+        \\
+        & + [2(bd + ac)] \cdot det
+        \begin{bmatrix}
+            2(bc + ad) & 2(a^{2} + c^{2}) - 1
+            \\
+            2(bd - ac) & 2(cd + ab)
+        \end{bmatrix}
+        \\\\
+        & = 8a^{6} + 16a^{4}b^{2} + 16a^{4}c^{2} + 16a^{4}d^{2} - 12a^{4} + 8a^{2}b^{4}
+        \\
+        & - 12a^{2}b^{2} + 8a^2c^{4} + 16a^{2}b^{2}c^{2} - 12a^{2}c^{2}+8a^{2}d^{4} + 16a^{2}b^{2}d^{2}
+        \\
+        & - 12a^{2}d^{2} + 16a^{2}c^{2}d^{2} + 6a^{2} + 2b^{2} + 2c^{2} + 2d^{2} -1
+        \\
+        & = 16a^{4}(1 - a^{2}) - 12a^{2}(1 - a^2) + 8a^{6} + 2(1 - a^{2}) + 8a^{2}(1 - a^{4}) - 16a^{2} + 12a^{4} + 6a^{2} - 1
+        \\
+        & = 2 - 1 = 1
+    \end{aligned}
+$$
+
+\section{Change of Coordinates}
+
+For each of the required points, if the answer
+is positive, show how it can be computed, and if the answer is negative explain why it cannot be
+computed.
+$$
+    \begin{aligned}
+        & ^{B}p = ^{B}_{A}T(^{A}p)
+        \\
+        & ^{C}p = (^{C}_{W}T) (^{W}_{B}T) (^{B}_{A}T)(^{A}p)
+        \\
+        & ^{W}p = (^{W}_{B}T) (^{B}_{A}T)(^{A}p)
+    \end{aligned}
+$$
+
+\section{Quarternions}
+    $$p = 1 + 2i - 3k$$
+    $$q = 5 + 4j + 2k$$
+
+1. the product of \textbf{pq}
+
+$$
+    \begin{aligned}
+        pq & = (1 + 2i - 3k)(5 + 4j + 2k)
+        \\
+        & = 5 + 4j - 13k + 10i + 8ij + 4ik - 12jk - 6k^{2}
+        \\
+        & = 5 + 4j -13k + 10i + 8k - 4j - 12i + 6
+        \\
+        & = 11 - 2i - 5k
+    \end{aligned}
+$$
+
+2. the norm of the product \textbf{pq}
+
+$$
+    \begin{aligned}
+        & pq = 11 - 2i - 5k
+        \\
+        & norm = \sqrt{11^{2} + (-2)^{2} + (-5)^{2}} = \sqrt{150}
+    \end{aligned}
+$$
+
+\end{document}

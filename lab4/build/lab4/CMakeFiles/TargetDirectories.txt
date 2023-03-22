@@ -1,0 +1,10 @@
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/install/strip.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/install/local.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/install.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/list_install_components.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/rebuild_cache.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/edit_cache.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/test.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/drawsquarefb.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/lab4_uninstall.dir
+/root/CSE180/src/lab4/build/lab4/CMakeFiles/uninstall.dir

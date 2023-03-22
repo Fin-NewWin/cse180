@@ -1,0 +1,4 @@
+Invoking command in '/root/CSE180/src/lab4/build/lab4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/CSE180/src/lab4 -DCMAKE_INSTALL_PREFIX=/root/CSE180/src/lab4/install/lab4
+Invoked command in '/root/CSE180/src/lab4/build/lab4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/CSE180/src/lab4 -DCMAKE_INSTALL_PREFIX=/root/CSE180/src/lab4/install/lab4
+Invoking command in '/root/CSE180/src/lab4/build/lab4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/CSE180/src/lab4/build/lab4 -- -j8 -l8
+Invoked command in '/root/CSE180/src/lab4/build/lab4' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/CSE180/src/lab4/build/lab4 -- -j8 -l8

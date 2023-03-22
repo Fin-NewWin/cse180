@@ -1,0 +1,95 @@
+[0.022s] Invoking command in '/root/CSE180/src/lab4/build/lab4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/CSE180/src/lab4 -DCMAKE_INSTALL_PREFIX=/root/CSE180/src/lab4/install/lab4
+[0.103s] -- The C compiler identification is GNU 9.4.0
+[0.174s] -- The CXX compiler identification is GNU 9.4.0
+[0.179s] -- Check for working C compiler: /usr/bin/cc
+[0.276s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.277s] -- Detecting C compiler ABI info
+[0.379s] -- Detecting C compiler ABI info - done
+[0.395s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.399s] -- Check for working CXX compiler: /usr/bin/c++
+[0.508s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.510s] -- Detecting CXX compiler ABI info
+[0.621s] -- Detecting CXX compiler ABI info - done
+[0.635s] -- Detecting CXX compile features
+[0.636s] -- Detecting CXX compile features - done
+[0.645s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.685s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.685s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.048s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.161s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.185s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.200s] -- Found RTI Connext: /opt/rti.com/rti_connext_dds-5.3.1
+[2.682s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.743s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.892s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.002s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.005s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.007s] -- Looking for pthread.h
+[3.108s] -- Looking for pthread.h - found
+[3.109s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.212s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.212s] -- Looking for pthread_create in pthreads
+[3.303s] -- Looking for pthread_create in pthreads - not found
+[3.304s] -- Looking for pthread_create in pthread
+[3.414s] -- Looking for pthread_create in pthread - found
+[3.416s] -- Found Threads: TRUE  
+[3.684s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[3.738s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[3.931s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[3.961s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[4.077s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.241s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.251s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.251s] -- Configured cppcheck include dirs: 
+[4.251s] -- Configured cppcheck exclude dirs and/or files: 
+[4.261s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.261s] -- Configured cpplint exclude dirs and/or files: 
+[4.267s] -- Added test 'lint_cmake' to check CMake code style
+[4.279s] -- Added test 'uncrustify' to check C / C++ code style
+[4.280s] -- Configured uncrustify additional arguments: 
+[4.281s] -- Added test 'xmllint' to check XML markup files
+[4.287s] -- Configuring done
+[4.301s] -- Generating done
+[4.303s] -- Build files have been written to: /root/CSE180/src/lab4/build/lab4
+[4.313s] Invoked command in '/root/CSE180/src/lab4/build/lab4' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /root/CSE180/src/lab4 -DCMAKE_INSTALL_PREFIX=/root/CSE180/src/lab4/install/lab4
+[4.317s] Invoking command in '/root/CSE180/src/lab4/build/lab4': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/CSE180/src/lab4/build/lab4 -- -j8 -l8
+[4.384s] [35m[1mScanning dependencies of target drawsquarefb[0m
+[4.452s] [ 50%] [32mBuilding CXX object CMakeFiles/drawsquarefb.dir/src/drawsquarefb.cpp.o[0m
+[6.290s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.290s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:9:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kcoords[m[K’ as multidimensional array must have bounds for all dimensions except the first
+[6.290s]    49 |  double [01;31m[Kcoords[m[K[][] = {[1, 0], [1, -1]};
+[6.290s]       |         [01;31m[K^~~~~~[m[K
+[6.290s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:24:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[6.291s]    49 |  double coords[][] = {[[01;31m[K1[m[K, 0], [1, -1]};
+[6.291s]       |                        [01;31m[K^[m[K
+[6.291s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[6.291s]    49 |  double coords[][] = {[1[01;31m[K,[m[K 0], [1, -1]};
+[6.291s]       |                         [01;31m[K^[m[K
+[6.291s]       |                         [32m[K][m[K
+[6.292s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:[m[K In lambda function:
+[6.292s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[6.292s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[6.292s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K][m[K’ token
+[6.292s]    49 |  double coords[][] = [32m[K{[m[K[1, 0[01;31m[K][m[K, [1, -1]};
+[6.293s]       |                      [32m[K~[m[K     [01;31m[K^[m[K
+[6.293s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:46:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDIRS[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.293s]    46 |  double [01;35m[KDIRS[m[K[] = {0,M_PI/2,M_PI,M_PI/2};
+[6.293s]       |         [01;35m[K^~~~[m[K
+[6.293s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:48:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KyawAt[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.293s]    48 |  int [01;35m[KyawAt[m[K = 1;
+[6.293s]       |      [01;35m[K^~~~~[m[K
+[6.293s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:[m[K At global scope:
+[6.293s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:49:39:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[6.293s]    49 |  double coords[][] = {[1, 0], [1, -1]}[01;35m[K;[m[K
+[6.293s]       |                                       [01;35m[K^[m[K
+[6.294s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:52:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[6.294s]    52 |  [01;31m[Kwhile[m[K (rclcpp::ok()) {
+[6.294s]       |  [01;31m[K^~~~~[m[K
+[6.294s] [01m[K/root/CSE180/src/lab4/src/drawsquarefb.cpp:75:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[6.294s]    75 | [01;31m[K}[m[K
+[6.294s]       | [01;31m[K^[m[K
+[8.347s] make[2]: *** [CMakeFiles/drawsquarefb.dir/build.make:63: CMakeFiles/drawsquarefb.dir/src/drawsquarefb.cpp.o] Error 1
+[8.347s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/drawsquarefb.dir/all] Error 2
+[8.347s] make: *** [Makefile:141: all] Error 2
+[8.350s] Invoked command in '/root/CSE180/src/lab4/build/lab4' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/CSE180/src/lab4/build/lab4 -- -j8 -l8
