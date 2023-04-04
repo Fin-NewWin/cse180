@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.1)  2 APR 2023 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.1)  3 APR 2023 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,6 +820,11 @@ Overfull \hbox (0.71248pt too wide) in paragraph at lines 231--231
 
 
 Overfull \hbox (0.71248pt too wide) in paragraph at lines 231--231
+ []|\OT1/cmr/m/n/12 11| 
+ []
+
+
+Overfull \hbox (0.71248pt too wide) in paragraph at lines 231--231
  []|\OT1/cmr/m/n/12 10| 
  []
 
@@ -860,7 +865,7 @@ b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb>
-Output written on hw.pdf (2 pages, 66494 bytes).
+Output written on hw.pdf (2 pages, 66496 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
