@@ -1,10 +1,15 @@
 #!/bin/bash
 
 
+echo "======================================"
+echo "            Build Container           "
+echo "======================================"
+
 sudo docker rm -f ros2
 sudo docker build -t ros2_foxy . --build-arg 'ACCEPT_EULA=Y'
+
 echo "======================================"
-echo "              Build image             "
+echo "          Create container            "
 echo "======================================"
 
 sudo docker run -idt \
@@ -17,10 +22,6 @@ sudo docker run -idt \
     --privileged \
     ros2_foxy \
     bash
-
-echo "======================================"
-echo "          Create container            "
-echo "======================================"
 
 
 echo "Done"

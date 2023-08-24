@@ -46,9 +46,6 @@ RUN echo '\nsource /opt/ros/foxy/setup.bash' >> /etc/bash.bashrc
 WORKDIR /root
 RUN git clone https://github.com/stefanocarpin/MRTP
 
-RUN mkdir -p /root/CSE180/src
-WORKDIR /root/CSE180/src
-
 RUN apt install ros-foxy-turtlebot3* -y
 # WORKDIR /root/MRTP
 # RUN colcon build
